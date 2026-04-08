@@ -1,3 +1,13 @@
+
+const hamburger = document.getElementById('hamburger');
+const mobileMenu = document.getElementById('mobileMenu');
+
+hamburger.addEventListener('click', () => {
+  const isOpen = mobileMenu.classList.toggle('open');
+  hamburger.classList.toggle('open', isOpen);
+});
+
+
 console.log("Hello world"[8]);
 console.log("23433232323");
 console.log(`Ted` + `Code`);
