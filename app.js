@@ -95,7 +95,7 @@ let hasMember = false;
 //console.log(str);
 
 // **** LOOPS *** //
-// DRY == Don't repeat yourself
+// DRY printable == Don't repeat yourself
 
 //let counter = 1;
 
@@ -113,12 +113,36 @@ let hasMember = false;
 
 for (let i = 1; i <= 15; ++i) {
   if (i % 5 === 0) {
-    console.log("${i} - Asap  frontend");
+    console.log(`${i} - Asap  frontend`);
   } else if (i % 2 === 0) {
-    console.log("${i} - frontend");
+    console.log(`${i} - frontend`);
   } else {
-    console.log("${i} - Asap");
+    console.log(`${i} - Asap`);
   }
 }
-
 let str = "ASAP Frontend";
+
+for (i = 0; i < str.length; ++i) {
+  console.log(str[i]);
+}
+
+// function Declaration
+function greetme(time, teacher) {
+  console.log(`Good ${time}, ${teacher}`);
+}
+// call the function
+greetme("Morning", "Daniel"); // the values passed into the function are called argument
+greetme("afternoon", "Erijesu");
+greetme("Evening", "James");
+
+function main() {
+  return "Yo, wassup";
+}
+
+console.log(main());
+
+function sum() {
+  return 20000000 - 300;
+}
+
+console.log(sum());
