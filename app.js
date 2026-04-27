@@ -136,13 +136,74 @@ greetme("afternoon", "Erijesu");
 greetme("Evening", "James");
 
 function main() {
-  return "Yo, wassup";
+  return "Hi, wassup";
 }
 
 console.log(main());
 
-function sum() {
-  return 20000000 - 300;
+function sum(num1, num2) {
+  return num1 + num2;
 }
 
-console.log(sum());
+console.log(sum(10, 30));
+
+/* create a function that converts $USD into $AUD
+*$AUD to $USD formula: AUD = USD* 1.5
+
+
+@example
+conertUSD to AUD (1000) = 1500
+
+
+*/
+
+function convertUsdtoAud(dollars) {
+  let AUD = dollars * 1.5;
+  return AUD;
+}
+
+console.log(convertUsdtoAud(1000));
+console.log(convertUsdtoAud(500));
+console.log(convertUsdtoAud(200));
+
+// ARROW FUNCTION //
+const convertUsd = (dollars) => {
+  return dollars * 1.5;
+};
+
+console.log(convertUsd(2000));
+
+// ARRAYS //
+let item1 = "Banana";
+let item2 = "Mango";
+let item3 = "Orange";
+let item4 = "Avocado";
+
+let array = ["Banana", "Mango", "Orange", "Avocado"];
+// to target an element
+console.log(array[0]);
+// last element
+console.log(array[array.length - 1]);
+
+// array method .push
+array.push("Milk");
+
+// array method .filter method
+array.filter((element) => {
+  console.log(element);
+});
+
+//let filteredArray = numbers.filter((element) => {
+//console.log(element);
+//if ((element) => 15) {
+//return true;
+// }
+//});
+//console.log(filteredArray);
+// easier metthod
+let numbers = [20, 15, 30];
+
+let filteredArray = numbers.filter((element) => {
+  return element <= 15;
+});
+console.log(filteredArray);
